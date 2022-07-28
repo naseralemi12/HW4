@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css.css" media="all" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap" rel="stylesheet">
+    <!--source:source:https://woodpunchsgraphics.com-->
+</head>
+
+<body>
+    <header>
+        <!--Logo-->
+        <aside>
+            <a href="#"><img id="logoImage" class="logo" src="logo.gif" alt="logo" width=75 height=75></a>
+        </aside>
+        <!--Name that goes next to the logo-->
+        <h1 class="logoName" id="logoName"><span>ADAM ALEMI</span></h1>
+        <br/>
+        <!--Navbar-->
+        <nav class="grid">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <br/>
+    </header>
+
+    <main>
+        <!--main picture-->
+        <a href="#"><img id="main" src="main.png" alt="Main picture" width="450" height="300"></a>
+    </main>
+
+
+    <hr>
+
+    <pre class="info">
+        
+                   <span> Hello, Welcome To My Page!</span>
+                   
+    </pre>
+
+    <details>
+        <summary>
+            <strong>CONTACT</strong>
+        </summary>
+        <div>
+            <table>
+                <caption><em style="background-color: var(--backgroundColor);
+                    font-size:larger">Contact Me Anytime! &hearts; </em> </caption>
+                <tr>
+                    <th style="background-color: var(--backgroundColor);
+                    font-size:larger">Phone:</th>
+                    <td style="                background-color: var(--backgroundColor);
+                    font-size:larger">(916)123-4567</td>
+                </tr>
+                <tr>
+                    <th style="background-color: var(--backgroundColor);
+                    font-size:larger">Email:</th>
+                    <td style="background-color: var(--backgroundColor);
+                    font-size:larger">abc@gmil.com</td>
+                </tr>
+            </table>
+        </div>
+    </details>
+    <footer>
+    </footer>
+    <script>
+        //@ts-check
+        const logo = document.getElementById('logoImage');
+        const logoName = document.getElementById('logoName');
+        logo.addEventListener("mouseenter", (e) => {
+            logo.style.transition = "none";
+            logoName.style.transform = "translateZ(3px) rotateZ(0deg)";
+        });
+        logo.addEventListener("mouseleave", (e) => {
+            logo.style.transition = "all 0.5s ease";
+            logo.style.transform = `rotateY(0deg) rotateX(0deg)`;
+            logoName.style.transform = "translateZ(0px) rotateZ(0deg)";
+        });
+    </script>
+</body>
+
+</html>

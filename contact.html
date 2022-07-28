@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css.css" media="all" type="text/css">
+    <link rel="stylesheet" href="contact.css" media="all" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>Contact Me</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Fill in the following form: </h2>
+            <form style="padding:2% ;" onsubmit="sendEmail()">
+                <table id="tbl_form">
+                    <tr>
+                        <th>Name: </th>
+                        <td><input type="text" size="35" id="name" name="name"></td>
+                    </tr>
+                    <tr>
+                        <th>Email: </th>
+                        <td><input type="text" size="35" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <th>Reason: </th>
+                        <td>
+                            <select id="reason" name="reason">
+                            <option id="Reason">No Reason</option>
+                            <optgroup label="Personal Reason">
+                            </optgroup>
+                            <optgroup label="Business Reason">
+                            </optgroup>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Message: </th>
+                        <td><textarea placeholder="Write a detailed message..." rows="10" cols="37" id="message" name="message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" id="submit_btn"> Send </button></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <dialog id="dialog">
+            <h2>Message Sent Successfully!</h2>
+
+        </dialog>
+        <section>
+            <h2><span style="background-color:var(--backgroundColor);border-radius: 25%;">Other ways to Connect with me: </span></h2>
+            <a href="#" class="fa fa-facebook" style="border-radius: 30%;"></a>
+            <a href="#" class="fa fa-linkedin" style="border-radius: 30%;"></a>
+            <a href="#" class="fa fa-instagram" style="border-radius: 30%;"></a>
+            <a href="#" class="fa fa-reddit" style="border-radius: 30%;"></a>
+        </section>
+
+    </main>
+    <footer>`
+        <button class="btn">
+            You Are The Best!
+          </button>
+
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        let submitButton = document.getElementById('submit_btn')
+        submitButton.addEventListener('click', () => {
+            if (typeof dialog.showModal === "function") {
+                dialog.showModal();
+            }
+        });
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "adam@gmail.com",
+            Password: "adam123123",
+            To: 'adamadam@gmail.com',
+            From: document.getElementById("email").value,
+            Subject: "New Message",
+            Body: "Name: " + document.getElementById("name").value +
+                "Email: " + document.getElementById("email").value +
+                "Reason: " + document.querySelector("select").value +
+                "Message: " + document.querySelector("textarea").value
+        }).then();
+    </script>
+</body>
+
+</html>

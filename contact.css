@@ -1,0 +1,122 @@
+body {
+    color: black;
+}
+
+header {
+    text-align: left;
+}
+
+nav ul {
+    justify-content: flex-start !important;
+}
+
+section img {
+    margin-top: 10px;
+    width: 90%;
+}
+
+#resume_link {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#submit_btn {
+    float: right;
+    width: 150px;
+    margin-left: 80px;
+    font-size: 25px;
+}
+
+#contact_links {
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+dialog {
+    width: 30%;
+    border-radius: 20%;
+    margin: 25% 35%;
+}
+
+dialog h2 {
+    text-align: center;
+    color: Green;
+}
+
+
+/*--------------larger-screen--------------*/
+
+@media screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        padding: 5px;
+    }
+}
+
+#tbl_form * {
+    padding: 1%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+.btn {
+    transition: transform 250ms;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background: slateblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    animation: mymove 5s infinite;
+    margin-left: 8%;
+}
+
+@keyframes mymove {
+    50% {
+        transform: rotate(360deg);
+    }
+}
+
+.btn:hover {
+    background: rgb(106, 153, 204);
+    border-radius: 25%;
+    color: rgb(143, 51, 134);
+    transform: translateX(50%);
+    transform: translateX(-50%);
+}
