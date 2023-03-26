@@ -43,6 +43,14 @@ dialog h2 {
     color: Green;
 }
 
+div {
+    margin: 5px;
+}
+
+h1 {
+    margin: 5px;
+}
+
 
 /*--------------larger-screen--------------*/
 

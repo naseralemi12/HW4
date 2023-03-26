@@ -21,9 +21,6 @@ button {
     width: 10%;
 }
 
-
-/*--------------larger-screen--------------*/
-
 @media screen and (min-width: 750px) {
     main {
         display: grid;
@@ -33,5 +30,43 @@ button {
     }
     main section {
         border: 1px dashed black;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.github-link {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.github-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        position: relative;
     }
 }

@@ -24,7 +24,7 @@
         <h1>Contact Me</h1>
     </header>
     <main>
-        <section>
+        <div>
             <h2>Fill in the following form: </h2>
             <form style="padding:2% ;" onsubmit="sendEmail()">
                 <table id="tbl_form">
@@ -57,25 +57,26 @@
                     </tr>
                 </table>
             </form>
-        </section>
+        </div>
         <dialog id="dialog">
             <h2>Message Sent Successfully!</h2>
 
         </dialog>
-        <section>
+        <div>
             <h2><span style="background-color:var(--backgroundColor);border-radius: 25%;">Other ways to Connect with me: </span></h2>
             <a href="#" class="fa fa-facebook" style="border-radius: 30%;"></a>
             <a href="#" class="fa fa-linkedin" style="border-radius: 30%;"></a>
             <a href="#" class="fa fa-instagram" style="border-radius: 30%;"></a>
             <a href="#" class="fa fa-reddit" style="border-radius: 30%;"></a>
-        </section>
-
-    </main>
-    <footer>`
+        </div>
         <button class="btn">
             You Are The Best!
           </button>
-
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Adam Alemi. All Rights Reserved.</p>
+        </div>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
