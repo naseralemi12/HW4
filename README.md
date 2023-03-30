@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is my portfolio website, showcasing my projects, skills, and experiences. You can visit the live website at https://chipper-kitsune-d5866b.netlify.app/.
+This is my portfolio website, showcasing my projects, skills, and experiences. You can visit the live website at <https://chipper-kitsune-d5866b.netlify.app>
 
 ## Table of Contents
 
