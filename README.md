@@ -4,14 +4,16 @@ This is my portfolio website, showcasing my projects, skills, and experiences. Y
 
 ## Table of Contents
 
-- [Description](#description)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Portfolio Website](#portfolio-website)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Contact](#contact)
+  - [GUI](#gui)
 
 ## Description
 
@@ -33,7 +35,7 @@ The website is built using HTML, CSS, and JavaScript, and it's hosted on Netlify
 
 ## Installation
 
-To run this website locally, you can clone this repository by running the following command: git clone https://github.com/naseralemi12/HW4.git
+To run this website locally, you can clone this repository by running the following command: git clone <https://github.com/naseralemi12/HW4.git>
 Then, open the `index.html` file in your web browser.
 
 ## Usage
@@ -48,3 +50,9 @@ If you find any bugs or issues with the website, please feel free to open an iss
 
 If you have any questions or suggestions, please feel free to contact me at [naseralemi12@gmail.com](mailto:naseralemi12@gmail.com).
 
+## GUI
+
+![pic1](./images/port1.png)
+![pic2](./images/port2.png)
+![pic3](./images/port3.png)
+![pic4](./images/port4.png)
