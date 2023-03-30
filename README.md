@@ -44,10 +44,6 @@ Feel free to use this website as a template for your own portfolio website. You 
 
 If you find any bugs or issues with the website, please feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Contact
 
 If you have any questions or suggestions, please feel free to contact me at [naseralemi12@gmail.com](mailto:naseralemi12@gmail.com).
