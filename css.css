@@ -93,6 +93,7 @@ body img#main {
     opacity: 0.5;
     float: none;
     transform-style: preserve-3d;
+    border-radius: 15%;
 }
 
 summary strong {
