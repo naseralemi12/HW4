@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="css.css" media="all" type="text/css">
+    <link rel="stylesheet" href="projects.css" media="all" type="text/css">
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">CONTACT </a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>My Projects</h1>
+        <div class="github-link">
+            <a href="https://github.com/naseralemi12">Visit my GitHub</a>
+        </div>
+    </header>
+    <main>
+
+
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t5U7gkItSYk?si=kwAkqJ9SBR8_UTXh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <button onclick="toTop()">Back To The Top</button>
+        <div class="container">
+            <p>&copy; 2023 Adam Alemi. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = () => {
+            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {}
+        }
+        const toTop = () => window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    </script>
+</body>
+
+</html>
